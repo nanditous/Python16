@@ -1,9 +1,7 @@
-def suma_cuadrados(*args):
-    suma = 0
-    for n in args:
-        suma += n**2
-    return suma
+def describir_persona(nombre, **kwargs):
+    print(f"Características de {nombre}:")
+    for nombre_argumento, valor_argumento in kwargs.items():
+        print(f"{nombre_argumento}: {valor_argumento}")
 
 
-resultado = suma_cuadrados(1, 2, 3, 4)
-print(resultado)
+describir_persona("Maria", color_ojos="azules", color_pelo="rubio")
