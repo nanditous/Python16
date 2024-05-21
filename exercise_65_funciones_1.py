@@ -19,3 +19,4 @@ dado1,dado2 = lanzar_dados()
 resultado = evaluar_jugada(dado1,dado2)
 
 print(resultado)
+
